@@ -1,6 +1,9 @@
 import axios from 'axios';
 
 const url = `${process.env.REACT_APP_API_URL}/posts`;
+// const x=;
+// console.log(url);
+// console.log(x);
 
 export const fetchPosts = () => axios.get(url);
 export const createPost = (newPost) => axios.post(url, newPost);
